@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Bike Rental</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #000428, #004e92);
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00d4ff;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1613082291676-29b8f7b7f3a5?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .bikes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .bike-card {
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .bike-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .bike-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .bike-card h4 {
+      margin: 15px 0 5px;
+    }
+
+    .bike-card p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RideLux Rentals</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#bikes">Bikes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Premium Bikes for Every Adventure</h2>
+  </section>
+
+  <section class="section" id="bikes">
+    <h3>Our Bike Collection</h3>
+    <div class="bikes">
+      <div class="bike-card">
+        <img src="https://images.unsplash.com/photo-1568475521321-9e13b4dcbfe6?auto=format&fit=crop&w=800&q=80" alt="Bike 1">
+        <h4>Mountain Explorer</h4>
+        <p>Perfect for off-road and hilly terrain.</p>
+      </div>
+      <div class="bike-card">
+        <img src="https://images.unsplash.com/photo-1589468128607-0c681a57cda6?auto=format&fit=crop&w=800&q=80" alt="Bike 2">
+        <h4>City Rider</h4>
+        <p>Smooth and fast for urban travel.</p>
+      </div>
+      <div class="bike-card">
+        <img src="https://images.unsplash.com/photo-1584467735871-0d7e9e6c8599?auto=format&fit=crop&w=800&q=80" alt="Bike 3">
+        <h4>Classic Cruiser</h4>
+        <p>Stylish ride for relaxed experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: info@ridelux.com</p>
+    <p>Phone: ‪+91 98765 43210‬</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 RideLux Rentals. All rights reserved.</p>
+  </footer>
+</body>
+</html>
